@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         String[] roles = new String[] {"Городничий", "Аммос Федорович", "Артемий Филиппович", "Лука Лукич"};
@@ -9,6 +11,29 @@ public class Main {
                                             "Артемий Филиппович: Вот не было заботы, так подай!",
                                             "Лука Лукич: Господи боже! еще и с секретным предписаньем!"};
         System.out.println(printTextLineForRole(roles, textLines));
+
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Введите кол-во действующих лиц:");
+//        int size = scanner.nextInt();
+//        scanner.nextLine();
+//        String[] roles = new String[size];
+//        System.out.println("Введите имена:");
+//        for (int j = 0; j < size; j++) {
+//            roles[j] = scanner.nextLine();
+//        }
+//
+//
+//        System.out.println("Введите кол-во строк текста:");
+//        int sizeText = scanner.nextInt();
+//        scanner.nextLine();
+//        String[] textLines = new String[sizeText];
+//        System.out.println("Введите реплику:");
+//        for (int i = 0; i < sizeText; i++) {
+//            textLines[i] = scanner.nextLine();
+//        }
+//        scanner.close();
+//
+//        System.out.println(printTextLineForRole(roles, textLines));
     }
 
     public static String printTextLineForRole (String[] roles, String[] textLines) {
